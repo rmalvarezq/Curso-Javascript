@@ -13,6 +13,12 @@ for (let pelicula in peliculas) {
 	console.log(peliculas[pelicula]);
 	console.log('121212');
 }
-var busqueda = peliculas.find((pelicula) => pelicula == 'gran torino');
 
-console.log('asdasdasdasd ' + busqueda);
+
+
+var precios  = [10,20,30];
+
+// var busqueda = peliculas.find((pelicula) => pelicula == 'gran torino');
+
+var busqueda = precios.some(precio => precio > 10);
+console.log('resultado de la busqueda: ' + busqueda);
